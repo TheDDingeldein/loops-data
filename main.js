@@ -34,5 +34,12 @@ for (const taco of team) {
   console.log(taco)
   instructors.innerHTML += `<h1>${ taco.name }</h1>`
   instructors.innerHTML += `<h2>${ taco.favoriteColor }</h2>`
-  instructors.innerHTML += `<img src={ taco.image } alt = "photo"`
 }
+
+const button = document.getElementById('main-btn');
+
+const whatIsTheId = (e) => {
+  return `The element ID is $(e.target.id)!`;
+}
+
+button.addEventListener('click', whatIsTheId);
